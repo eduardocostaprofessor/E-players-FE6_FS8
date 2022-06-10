@@ -1,0 +1,40 @@
+.container {
+    max-width: 1200px;
+}
+
+.btn-danger {
+   background-color: salmon;
+   border: 1px solid salmon;
+}
+
+.btn-danger:hover {
+    background-color: #f76555;
+    border: 1px solid #f76555 ;
+}
+
+.card {
+    max-width: 270px;
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.8);
+    background-image: linear-gradient(to bottom, #444444, #1e1c21);
+}
+.card .btn {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-top: 10px;
+    text-transform: uppercase !important;
+    border-radius: 10px;
+}
+
+.card-title {
+    text-transform: uppercase;
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.3rem;
+}
+
+.card-price {
+    font-family: "TitilliumWeb-SemiBold";
+    font-size: 1.5rem;
+}
