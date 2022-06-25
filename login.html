@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+    <!-- https://igorescobar.github.io/jQuery-Mask-Plugin/docs.html -->
+
+
+    <h1>Login</h1>
+    <form action="" class="frm-login">
+        <label for="usuario">Nome de Usuário</label>
+        <input class="input-field" type="text" id="usuario" placeholder="Login ou Email" required>
+        
+        <label for="senha">Senha</label>
+        <input class="input-field" type="password" id="senha" placeholder="****" required>
+
+        <input class="input-field" type="text" id="cpf" placeholder="Seu cpf" required autocomplete="none">
+
+        <div class="linha">
+            <button class="btn-form" id="sign-in" type="button">Sign in</button>
+            <button class="btn-form" type="button">Sign out</button>
+        </div>
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
+
+    <script src="./js/login.js"></script>
+
+</body>
+
+</html>

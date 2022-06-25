@@ -18,6 +18,7 @@
 .jogos {
     display: none;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -145,6 +146,11 @@ body {
 /* produtos */
 .produtos {
     background-color: #1E1C21;
+    padding: 40px 0;
+}
+
+.produtos h2 {
+    font-size: 1.5rem;
 }
 
 .produtos h2,
@@ -159,13 +165,13 @@ body {
 }
 
 .btn-danger {
-    background-color: salmon;
-    border: 1px solid salmon;
+    background-color: #C31616;
+    border: 1px solid #C31616;
 }
 
 .btn-danger:hover {
-    background-color: #f76555;
-    border: 1px solid #f76555;
+    background-color: #ac1515;
+    border: 1px solid #ac1515;
 }
 
 .card {
@@ -199,6 +205,21 @@ body {
 
 
 
+
+.info-test {
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    color: white;
+    z-index: 100;
+    background-color: salmon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Medias */
 
 /* Celular: 0 767px */
@@ -212,7 +233,8 @@ body {
 
     }
 }
-/* Tablets */
+
+/**************** Tablets 0 até 991px *****************/
 @media screen and (max-width: 991px) {
     .cabecalho {
         padding: 20px 25px;
@@ -224,15 +246,65 @@ body {
 
     }
 
+    .banner {
+        background-image: url(../images/banner_lol.png);
+    }
+
+    .banner-box {
+        justify-content: center;
+    }
+
     .menu-bars {
         width: 40px;
         color: white;
     }
 
 
+    /* 
+        Precisa corrigir/mover para mídia de tablets 
+        pois estamos fazendo "DESKTOP FIRST" 
+        senão o trabalho poderá ser dobrado 
+    ß*/
+    .navbarShow {
+        left: 0 !important;
+    }
+
+    /* navbar */
+    .menu-principal {
+        position: fixed;
+        /* viewport/janela */
+        bottom: 0;
+        left: -80%;
+        z-index: 10;
+
+        width: 80%;
+        height: 100%;
+        background-color: rgba(30, 28, 33, 0.95);
+
+        /* já tem flexbox */
+        flex-direction: column;
+        justify-content: center;
+
+        transition: left 0.5s;
+    }
+
+    .menu-principal a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        width: 80%;
+        height: 30px;
+        margin-bottom: 30px;
+        font-size: 1.5rem;
+
+        border-left: 3px dotted white;
+    }
+
+
 }
 
-/* celular */
+/* celular de 0px até 767px*/
 @media screen and (max-width: 767px) {
 
     .logotipo {
@@ -243,41 +315,9 @@ body {
         width: 25px;
     }
 
-    /* 
-        Precisa corrigir/mover para mídia de tablets 
-        pois estamos fazendo "DESKTOP FIRST" 
-        senão o trabalho poderá ser dobrado 
-    ß*/
-    .navbarShow {
-        left: 0 !important;
-    }
-    /* navbar */
-    .menu-principal {
-        position: fixed; /* viewport/janela */
-        bottom: 0;
-        left: -80%;
-        z-index: 10;
-
-        width: 80%;
-        height: 100%;
-        background-color: #1E1C21;
-
-        /* já tem flexbox */
-        flex-direction: column;
-        justify-content: center;
-        
-        transition: left 0.5s;
-    }
-
     .menu-principal a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        width: 80%;
-        height: 30px;
-        margin-bottom: 20px;
-        text-align: center;
-        /* background-color: rgba(255, 255, 255, 0.8); */
+        margin-bottom: 30px;
+        font-size: 1rem;
     }
+
 }
